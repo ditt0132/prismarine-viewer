@@ -1,10 +1,12 @@
 import {Bot} from "mineflayer";
+import http from "http"
 
 export function mineflayer(bot: Bot, settings: {
     viewDistance?: number;
     firstPerson?: boolean;
     port?: number;
     prefix?: string;
+    http?: http.Server;
 });
 
 export function standalone(options: {
@@ -14,6 +16,7 @@ export function standalone(options: {
     viewDistance?: number;
     port?: number;
     prefix?: string;
+    http?: http.Server;
 });
 
 export function headless(bot: Bot, settings: {
